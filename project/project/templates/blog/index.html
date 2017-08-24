@@ -1,0 +1,5 @@
+{% extends "base.html" %} {% block content %} {% for meme in meme_list %}
+<li>
+  <img src="{{meme.image.url }}" alt="">
+</li>
+{% endfor %} {% endblock content %}
