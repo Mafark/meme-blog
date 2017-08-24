@@ -9,6 +9,9 @@ class MemeAdmin(admin.ModelAdmin):
     list_display = ('id', 'image', 'category', 'pub_date')
     list_filter = ('pub_date',)
 
+    class Meta:
+        model = Meme
+
 
 admin.site.register(Category)
 admin.site.register(Meme, MemeAdmin)
